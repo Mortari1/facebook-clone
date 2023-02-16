@@ -1,38 +1,216 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ccc;
+}
+
+.header{
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+}
+
+.headerLeft{
+  width: 50%;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.logo-fb svg{
+  color: #4287f5;
+  font-size: 40px;
+  margin: 0 10px;
+}
+
+.search-fb {
+  background-color: rgb(230,230,230);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.search-fb svg{
+  color: gray;
+  font-size: 15px;
+}
+
+.menu-fb{
+  cursor: pointer;
+  margin-left: 25px;
+  position: relative;
+  top: 8px;
+  padding: 8px 10px;
+}
+.menu-fb :hover{
+  background-color: rgb(200,200,200) ;
+}
+.menu-fb svg{
+  color: gray;
+  font-size: 25px;
+}
+
+.headerRight{
+  width: 50%;
+  text-align: right;
+  margin: 0 20px;
+}
+
+.plus-btn{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: rgb(230,230,230);
+  text-align: center;
+  line-height: 36px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.stories{
+  
+  display: flex;
+  margin: 10px 0;
+}
+
+.storiesCard{
+  width: 19%;
+  margin-right: 1%;
+  padding-top: 25%;
+  background: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.storiesCard p{
+  font-family: Courier;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.feed{
+  background-color: white;
+  padding: 10px;
+
+}
+
+.feedForm{
+  padding: 10px;
+}
+
+.feedForm img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border-bottom: 1px solid #ccc;  
+}
+
+.feedForm input{
+  position: relative;
+  top: -8px;
+  width: calc(98% - 40px);
+  margin-left: 2%;
+  height: 50px;
+  background-color: rgb(240,240,240);
+  padding-left: 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.feedForm input:focus{
+  outline: 0;
+}
+
+.feedIcons{
+  padding: 20px 40px;
+  display: flex;
+}
+
+.iconSingle{
+  
+  width: 33.3%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.iconSingle svg{
+  vertical-align: middle;
+  font-size: 25px;
+  color: #f02849;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.iconSingle.foto svg {
+  color: rgb(86, 253, 86) ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.iconSingle.emoji svg{
+  color: rgb(245, 245, 60);
 }
 
-.App-link {
-  color: #61dafb;
+.iconSingle span{
+  font-weight: bold;
+  color: gray;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feedPostSingle {
+  margin: 20px 0 ;
+  background-color: white;
+}
+
+.feedPost__profile{
+  padding: 10px;
+}
+
+.feedPost__profile span{
+  font-size: 18px;
+  display: inline-block;
+  font-family:  'Trebuchet MS';
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+
+.feedPost__profile span > span{
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.feedPost__profile img{
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 22px;
+
+}
+
+.feedPost__content img{
+
+ max-width: 100%;
+ display: block;
+}
+
+#worldIcon{
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.feedPost__content p {
+  margin: 8px 12px;
 }
