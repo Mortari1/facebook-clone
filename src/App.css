@@ -212,5 +212,6 @@ body{
 }
 
 .feedPost__content p {
-  margin: 8px 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
