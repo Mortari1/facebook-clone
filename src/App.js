@@ -11,7 +11,9 @@ function App() {
         <Header/>
         <Stories/>
         <Feed/>
-        <FeedPost/>
+        
+        <FeedPost nome="Henrique Mortari" conteudo="Jogo novo da piazada" 
+        horario="13:30"/>
        
        
     </div>
