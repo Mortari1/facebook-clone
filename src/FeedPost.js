@@ -14,7 +14,7 @@ function FeedPost(props){
           </div>
           <div className='feedPost__content'>
             <p>{props.conteudo}</p>
-              <img src='https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2023/01/EGS_HogwartsLegacy_AvalancheSoftware_S1_2560x1440-2baf3188eb3c1aa248bcc1af6a927b7e-1.jpg'/>
+              <img src={props.img}/>
 
           </div>
         </div>

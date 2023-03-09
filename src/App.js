@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import Feed from "./Feed";
 import FeedPost from './FeedPost.js';
 
-import { db } from './firebase';
+import {db,functions} from './firebase';
 function App() {
   const [posts, setPosts] = useState([]);
 
@@ -24,9 +24,11 @@ function App() {
         <Stories/>
         <Feed/>
         {
-          posts.map(function(val){
-            <FeedPost nome={val.nome} conteudo={val.conteudo} 
-            horario="13:30"/>
+          posts.map((val)=>{
+            return(
+              <FeedPost nome={val.info.nome} conteudo={val.info.conteudo} img={val.info.img}
+              horario="13:30"/>
+            )
           })
         }
       
